@@ -1,0 +1,273 @@
+#main_of_login{
+    background-color: #2c2c54;
+    text-align: center;
+    align-items: center;
+   
+}
+
+.body_for_login{
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     
+}
+
+.con_tent{
+    font-family: Arial, Helvetica, sans-serif;
+    color:blanchedalmond;
+    text-align: center;
+    background-color:#2c2c54;
+    box-sizing: content-box;
+    overflow: scroll;
+    margin: 1em 1em 1em 1em;
+    word-spacing:1px;
+    font-weight: bold;
+}
+
+h1{
+    color:  white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#img{
+width: 10rem;
+height: auto;
+
+}
+#logo{
+   margin-left: 1em;
+}
+#front{
+     display: flex;
+     color: white;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     line-height: 1.75rem;
+     margin: auto;
+     flex-wrap: wrap;
+     position: sticky;
+     top: 0px;
+     background-color: #C4E538;
+}
+
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color:white;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    padding: 2rem;
+    height: auto;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+ 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    font-weight: bold;
+  }
+
+
+.photo{
+     display: flex;
+     
+
+}
+#content_side{
+     
+     text-align: center;
+     border: 2px solid white;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     background-color:  #7ed6df;
+     
+     
+}
+
+#mid,#content_side{
+margin-top: 2rem;
+width: 40rem;
+height: auto;
+}
+
+#back_button,#forward_button{
+     margin-top: 12rem;
+     margin-left: 1rem;
+     
+}
+
+.after_photo,.after_content{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+    
+}
+     
+#home,#apply,#visit
+{
+   background-color:#eb4d4b;    
+   padding: 5rem;
+   margin-top: 2rem;
+}
+
+#home:hover,#apply:hover,#visit:hover{
+    background-color:#be2edd;
+    color: white;
+    font-weight: bold;
+    
+    
+}
+
+.after_content{
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #ddd;
+    
+       
+}
+
+
+ .container1,.container2,.container3{
+    
+    position: relative;
+    text-align: center;
+    color:blue;
+    font-weight: bold;
+    margin-left: 1rem;
+    
+    
+    
+  }
+
+
+.centered1,.centered2,.centered3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+#image_of_why{
+     width: 20rem;
+     height: auto;
+     opacity: 0.3;
+    
+    
+  }
+  
+.centered2:hover > #answer_of_why,.centered3:hover > #answer_of_why,.centered1:hover > #answer_of_why {
+    display:  block;
+    background-color:white;
+    padding-bottom: 3rem;
+    color: black;
+}
+
+#answer_of_why{
+    display: none;
+}
+
+    
+.footer{
+  display: flex;
+  background-color:black;
+  color: white;
+  flex-wrap: wrap;
+ 
+
+ 
+  }
+
+
+#find_us,#stay{
+ margin-left:5rem;
+}
+
+#about_us,#find_us,#stay{
+   width: 20rem;
+   margin-top: 2rem;
+}
+#st_ay{
+  display: flex;
+  margin-left: 3rem;
+  padding: 2rem;
+  
+  
+ 
+}
+PinDropIcon{
+   margin-left: 5rem;
+}
+#pin:hover + #location,#twitter:hover,#email:hover,#youtube:hover,#face:hover{
+   background-color: red;
+  
+   cursor: pointer;
+   
+
+   
+
+}
+#pin:hover{
+   cursor: pointer;
+   background-color: red;
+}
+#location{
+  display: none;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#inside{
+    display: none;
+}
+#main{
+    background-color: aliceblue;
+    border: 1em solid red;
+}
+#main:hover > #inside{
+    display: block;
+    background-color: yellowgreen;
+    padding: 3rem;
+
+
+}
+.brand:hover >  .brand-sales {
+    display: block;
+    width: 3rem;
+}
+
+.brand-sales {
+    display: none;
+}
+.expandable{
+    display: none;
+    }
+    .expand:hover +.expandable{
+    display:inline !important;
+    }
+    .expandable:hover{
+    display:inline !important;
+    }
+</style>
+</head>
+<body>
+
+
+
+<!-- <div class="container">
+  <img src="https://ecoleprinceton.org/wp-content/uploads/2021/11/Preschool-Exceptional-Start.jpg" alt="Snow" style="width:40%;">
+  
+  <div class="centered">Centered</div>
+</div> -->
+
+ <div id="main"> 
+      hover me
+    <div id="inside"> its is visible </div>
+
+
+
+ </div>
+ <span className="brand">
+    <img src="https://murmure.me/wp-content/uploads/2017/10/nike-square-1900x1900.jpg" 
+      alt"some image class="product-card-place-logo" width="20%"/>
+ </span>
+ 
+    
+    <div class="expand">expand</div>
+    <div class="expand">expand</div>
+    <div class="expandable">expandable</div>
+
+</body>
+</html> 

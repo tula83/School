@@ -1,0 +1,42 @@
+.main_attend{
+    background-color: beige;
+    width:20rem;
+    height: 18rem;
+    margin: 4rem 30rem;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+#login{
+    margin-top: 2rem;
+    margin-left:2rem
+}
+
+@media only screen and (max-width: 600px) {
+    .main_attend{
+       margin: 1rem 5rem;
+    }
+    #student_data{
+         margin-left: 1rem 2rem;
+    }
+
+  }
+  
+  #student_data{
+     background-color:#badc58;
+     color:white;
+     width: 40rem;
+     margin-left: 4rem;
+     margin-top: 2rem;
+  }
+  .footer_for_attend{
+    display: flex;
+  }
+
+  #save{
+     margin: 2rem 15rem;
+     width: 6rem;
+  }
+
+  

@@ -1,0 +1,80 @@
+<div id='for_table'>
+    <table>
+       <tr>
+        <th>sno</th>
+        <th>name</th>
+        <th>rollno</th>
+         <th>present</th>
+         <th>absent</th>
+       </tr>
+       {
+         rowData.map((val,key)=>{
+             return(
+                 
+             <tr key={key}>
+               <td>{val.sno}</td>
+               <td>{val.Name}</td>
+               <td>{val.Rollno}</td>
+                <td> <input type='checkbox' class='present'onChange={present_handle}></input>{val.Present}</td>
+                <td> <input type='checkbox' class='absent' onChange={absent_handle}></input>{val.Absent}</td>
+               
+             </tr>
+             )
+         })
+       }
+       
+
+      </table>
+
+      const present_handle=()=>{
+        let  file_abs=document.getElementsByClassName("absent");
+        if(file_abs){
+             file_abs.style.display='none';
+        }
+        else
+        file_abs.style.display='block';
+          
+    }
+
+    const absent_handle=()=>{
+        console.log("absent")
+
+       
+
+    }
+
+    table{
+        border:1px solid brown;
+        padding: 10rem;
+        border-collapse: collapse;
+        margin-left:3rem;
+        width: 50rem;
+        
+        
+      }
+      tr{
+        width: 10rem;
+      }
+      th,td{
+          margin-bottom: 1rem;
+          border: 1px solid #30336b;
+          text-align: center;
+          
+      }
+      
+      th{
+        background-color:#ff7979;
+      }
+    
+    tr:nth-child(n){
+        background-color:#e056fd;
+    }
+    tr:hover{
+        background-color: #f9ca24;
+       }
+    
+    .present:checked{
+        background-color: red;
+        height: 2rem;
+    }
+    
